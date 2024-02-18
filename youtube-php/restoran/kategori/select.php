@@ -1,6 +1,6 @@
 <div style="margin:auto; width:900px;">
 
-<h1><a href="location:http://localhost/php-tugas/php-tugas/youtube-php/restoran/kategori/insert.php">TAMBAH DATA</a></h1>
+<h1><a href="http://localhost/php-tugas/php-tugas/youtube-php/restoran/kategori/insert.php">TAMBAH DATA</a></h1>
 
 <?php
 require_once "../function.php";
@@ -15,7 +15,6 @@ echo '<br>';
 $sql="SELECT idkategori FROM tblkategori";
 $result= mysqli_query($koneksi, $sql);
 $jumlahdata= mysqli_num_rows($result);
-
 $banyak=3;
 $halaman= ceil($jumlahdata/$banyak);
 
