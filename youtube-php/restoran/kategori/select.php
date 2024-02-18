@@ -1,7 +1,8 @@
 <div style="margin:auto; width:900px;">
 
-<?php 
+<h1><a href="location:http://localhost/php-tugas/php-tugas/youtube-php/restoran/kategori/insert.php">TAMBAH DATA</a></h1>
 
+<?php
 require_once "../function.php";
 
 $sql="SELECT idkategori FROM tblkategori";
