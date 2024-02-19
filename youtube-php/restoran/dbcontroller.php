@@ -50,7 +50,7 @@
 
     $db->runSQL("DELETE FROM tblkategori WHERE idkategori=26");
 
-    $db->pesan("berhasil");
+    //$db->pesan("berhasil");
     
     //var_dump($row);
    
