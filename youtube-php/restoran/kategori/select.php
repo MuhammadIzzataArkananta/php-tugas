@@ -18,6 +18,10 @@ $no=1+$mulai;
 
 ?>
 
+<div class="float-left mr-5">
+    <a class="btn btn-primary" href="?f=kategori&m=insert" role="button">Tambah Data</a>
+</div>
+
 <h3>Kategori</h3>
 <table class="table table-bordered w-50">
     <thead>
@@ -33,8 +37,8 @@ $no=1+$mulai;
         <tr>
             <td><?php echo $no++ ?></td>
             <td><?php echo $r['kategori'] ?></td>
-            <td><?php echo $r['idkategori'] ?></td>
-            <td><?php echo $r['idkategori'] ?></td>
+            <td><a href="?f=kategori&m=delete&id=<?php echo $r['idkategori'] ?>">Delete</a></td>
+            <td><a href="?f=kategori&m=update&id=<?php echo $r['idkategori'] ?>">Update</a></td>
         </tr>
         <?php endforeach ?>
     </tbody>
