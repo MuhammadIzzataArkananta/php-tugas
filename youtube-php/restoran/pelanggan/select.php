@@ -18,10 +18,6 @@ $no=1+$mulai;
 
 ?>
 
-<div class="float-left mr-5">
-    <a class="btn btn-primary" href="?f=pelanggan&m=insert" role="button">Tambah Data</a>
-</div>
-
 <h3>Pelanggan</h3>
 <table class="table table-bordered w-70 mt-4">
     <thead>
