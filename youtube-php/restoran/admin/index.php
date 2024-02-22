@@ -34,8 +34,7 @@ if(isset($_GET['log'])) {
                 <div class="float-end mt-3 me-3">User</div>  
             </div>
         </div>
-      
-        <div class="row-mt-5">
+        <div class="row mt-5">
             <div class="col-md-3">
                 <ul class="nav flex-column">
                     <li class="nav-item"><a class="nav-link" href="?f=kategori&m=select">Kategori</a></li>
