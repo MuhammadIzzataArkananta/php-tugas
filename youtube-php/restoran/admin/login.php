@@ -20,7 +20,6 @@ $db=new DB;
             <div class="col-md-3">
             <div class="form-group">
                  <form action="" method="post">
-                
                  <div>
                     <h3>LOGIN RESTORAN</h3>
                  </div>
@@ -40,7 +39,8 @@ $db=new DB;
                 </div>
         </form>
     </div>
-<?php 
+ 
+<?php
 
 if(isset($_GET['simpan'])) {
     $kategori=$_POST['kategori'];
@@ -48,7 +48,7 @@ if(isset($_GET['simpan'])) {
     $db->runSQL($sql);
     header("location:?f=kategori&m=select");
 }
-                
+
 ?>
 
 </div>
@@ -62,16 +62,17 @@ if(isset($_GET['simpan'])) {
 if (isset($_POST['login'])) {
     $email=$_POST['email'];
     $password=$_POST['password'];
-    $sql="SELECT * FROM tbluser WHERE email='$email' AND $password";
+    $sql="SELECT * FROM tbluser WHERE email='$email' AND password='$password' ";
     $count=$db->rowCOUNT($sql);
     if ($count == 0) {
-        echo"<h3>Email atau Password salah</h3>";
+        echo"<center><h3>Email atau Password salah</h3></center>";
     }
     else {
-        $sql="SELECT * FROM tbluser WHERE email='$email' AND $password";
+        $sql="SELECT * FROM tbluser WHERE email='$email' AND password='$password' ";
         $row=$db->getITEM($sql);
         $_SESSION['user']=$row['email'];
         $_SESSION['level']=$row['level'];
+        $_SESSION['iduser']=$row['iduser'];
         header("location:index.php");
     }
     echo $count;

@@ -31,7 +31,7 @@ if(isset($_GET['log'])) {
             </div>
             <div class="col-md-9">
                 <div class="float-end mt-3"><a href="?log=logout">logout</a></div>  
-                <div class="float-end mt-3 me-3">User</div>  
+                <div class="float-end mt-3 me-3">User : <a href="?f=user&m=updateuser&id=<?php echo $_SESSION['iduser']?>"><?php echo $_SESSION['user'] ?></a></div>  
             </div>
         </div>
         <div class="row mt-5">
