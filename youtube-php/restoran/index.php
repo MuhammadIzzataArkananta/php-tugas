@@ -20,7 +20,7 @@ $row=$db->getALL($sql);
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h2>Restoran SMK</h2>
+                <h2><a href="index.php">Restoran SMK</a></h2>
             </div>
             <div class="col-md-9">
                 <div class="float-end mt-3">Logout</a></div>
@@ -36,7 +36,7 @@ $row=$db->getALL($sql);
                 <?php if(!empty($row)) { ?>
                 <ul class="nav flex-column">
                    <?php foreach($row as $r): ?>
-                    <li class="nav-item"><a class="nav-link" href="#"><?php echo $r['kategori'] ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="?f=home&m=produk&id=<?php echo $r['idkategori']?>"><?php echo $r['kategori'] ?></a></li>
                     <?php endforeach ?>
                 </ul>
                 <?php } ?>
