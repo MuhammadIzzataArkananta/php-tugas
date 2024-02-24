@@ -33,7 +33,7 @@ if(isset($_GET['log'])) {
                     if(isset($_SESSION['pelanggan'])) {
                         echo ' 
                             <div class="float-end mt-3"><a href="?log=logout">Logout</a></div>
-                            <div class="float-end mt-3 me-3">Pelanggan : '.$_SESSION['pelanggan'].'</div>  
+                            <div class="float-end mt-3 me-3">Pelanggan : <a href="?f=home&m=beli"> '.$_SESSION['pelanggan'].'</a></div>  
                         ';
                     }
                     else {
